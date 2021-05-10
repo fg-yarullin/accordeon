@@ -39,8 +39,9 @@ button {
 .item.active .label::before {
   content: "‒";
 }
-.item.active .content {
-  height: 200px;
+.item.active .body {
+  height: auto;
+  display: block;
 }
 
 .label {
@@ -66,14 +67,14 @@ button {
   transform: translateY(-50%);
 }
 
-.content {
+.body {
   background-color: rgba(0, 0, 0, 0.02);
   height: 0;
-  overflow: hidden;
+  display: none;
   transition: 0.5s;
   border-radius: 5px;
 }
-.content p {
+.body .text {
   padding: 20px;
 }
 
